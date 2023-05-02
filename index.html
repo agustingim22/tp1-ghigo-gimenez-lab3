@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="undefined - Imgur.png" alt="">
+        <input type="text" id="ingresarUsuario" placeholder="  Ingrese su Usuario...">
+    </header>
+    <main>
+        <div class="info-principal">
+            <div>
+                <img id="foto-perfil" src="99qgQJy.jpeg" alt="foto de perfil">
+            </div>
+             <div>                
+                <h1 id="nombre"> Jane Doe</h1>
+                <strong><p>Email: jane_doe@gmail.com</p></strong>
+                <strong><p>Fecha de nacimiento:01/05/1996</p></strong>
+                <strong><p>Teléfono: 918-936-9585</p></strong>
+                <strong><p>Ciudad: Tokyo, Japón</p></strong>
+                <p>Trabajando en Lawn N</p> 
+            </div>
+            <div class="contenedor-btn">
+                <button id="btn" onclick="seguirDejarDeSeguir()">Seguir</button>
+            </div>
+        </div>
+        <br>
+        <div class="contenedor">
+            <div class="publicaciones">
+                <p>Publicado hace 1 semana</p>
+                <img src="imagen-publicacion.jpeg" alt="Foto de Publicaciones" id="foto-publicacion">
+                <div class="me-gusta">
+                    <br><button id="boton-megusta" onclick="meGustaModificar()">Me Gusta</button> <span id="span-megustafijo"> Me gustas</span><strong><span id="span-megusta">201</span></strong><br>
+                </div>
+                <h1>Comentarios</h1>
+                <strong><p>Juan Perez</strong>   ¡Wow, esa foto de Tokio es impresionante! 🌇✨</p>
+                <strong><p>Kathleen J Rennie</strong>   ¡Esta foto de Tokio es simplemente espectacular! Me trae tantos recuerdos.</p>
+                <div id="nuevoComentario"></div><button id="boton-eliminar" onclick="eliminarComentario()">Eliminar</button><br><br>
+                <input type="text" id="dejar-comentario" placeholder="  Deja tu comentario..."> <button id="boton-comentar" onclick="comentarPublicacion()">Comentar</button>
+            </div>
+            <div class="sobre-mi">
+                <h1>Sobre mí</h1>
+                <p>¡Hola a todos! Soy Jane, y actualmente vivo en la vibrante y emocionante ciudad de Tokio, Japón. Me encanta capturar la esencia de la vida urbana a través de mi lente, explorando el contraste entre la arquitectura moderna y las tradiciones centenarias que conviven en esta metrópolis única. Desde rascacielos deslumbrantes y calles bulliciosas hasta templos serenos y jardines tranquilos, encuentro inspiración en cada rincón de esta increíble ciudad. </p>
+            </div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
